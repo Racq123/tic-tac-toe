@@ -37,18 +37,18 @@ PlayerX.set(0)
 PlayerO.set(0)
 
 buttons = StringVar()
-click = True
+btn_click = True
 
 
 def checker(button):
-    global click
-    if button['text'] == "" and click == True:
+    global btn_click
+    if button['text'] == "" and btn_click:
         button['text'] = "X"
-        click = False
+        btn_click = False
         scorekeeper()
-    elif button['text'] == "" and click == False:
+    elif button['text'] == "" and not btn_click:
         button['text'] = "O"
-        click = True
+        btn_click = True
         scorekeeper()
 
 

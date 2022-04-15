@@ -170,6 +170,8 @@ button9.grid(row=3, column=2, sticky=S+N+E+W)
 # canvas = tkinter.Canvas(leftFrame, relief='raised', borderwidth=1)
 # canvas.grid(row=1, column=0)
 
+mainWindow.update()
+mainWindow.minsize(mainFrame.winfo_width() + 8, leftFrame.winfo_height() + rightFrame.winfo_height())
 
 mainWindow.mainloop()
 
